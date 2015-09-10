@@ -7,6 +7,14 @@
   background-color: rgba(66, 66, 66, 0.87);
   min-height: 100%;
 }
+@media screen and (max-width: 35.5em) {
+  .side-menu {
+    box-sizing: border-box;
+  }
+}
+.side-menu .hidden {
+  display: none;
+}
 .side-menu .menu-header {
   text-align: right;
   color: #A4A49E;
@@ -18,10 +26,9 @@
   cursor: pointer;
 }
 .side-menu .pure-menu-item {
-  padding: 10px;
+  padding: 15px;
 }
 .side-menu .pure-menu-link {
-  font-size: 18px;
   color: #fff;
   font-weight: 100;
 }

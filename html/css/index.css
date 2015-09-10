@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+#main {
+  text-align: center;
+}
+
 .header {
   padding: 20px;
   background-color: #424242;
@@ -27,9 +31,17 @@ body {
   color: #B09F8A;
   font-size: 14px;
   border: 2px solid #fff;
+  box-sizing: border-box;
 }
-.header .horizontal-menu {
-  text-align: right;
+@media screen and (min-width: 35.5em) {
+  .header .horizontal-menu {
+    text-align: right;
+  }
+}
+@media screen and (max-width: 35.5em) {
+  .header .horizontal-menu {
+    margin-top: 20px;
+  }
 }
 .header .horizontal-menu a {
   color: #fff;

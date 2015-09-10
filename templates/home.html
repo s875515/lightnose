@@ -1,10 +1,61 @@
-<div id="home-page">
-  <div class="pure-u-1 carousel-one">
-    <div id="owl-demo" class="owl-carousel">
+<section id="home-page" class="pure-u-md-4-5">
+  <section class="pure-u-1 carousel-one">
+    <div id="owl-1" class="owl-carousel">
       <div class="item"><img src="html/images/1.jpg"></div>
       <div class="item"><img src="html/images/2.jpg"></div>
       <div class="item"><img src="html/images/3.jpg"></div>
       <div class="item"><img src="html/images/4.jpg"></div>
     </div>
-  </div>
-</div>
+  </section>
+  <section class="pure-menu pure-menu-horizontal pure-u-1 home-tabs">
+    <ul class="pure-menu-list destop-tabs">
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">光鼻子推薦</a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">光鼻子熱愛</a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">光鼻子找尋</a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">5am光鼻子</a></li>
+    </ul>
+    <ul class="pure-menu-list mobile-tabs">
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link fa fa-thumbs-up"></a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link fa fa-star"></a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link fa fa-search"></a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link fa fa-lightbulb-o"></a></li>
+    </ul>
+  </section>
+  <section id="owl-2" class="owl-carousel">
+    <p>人生方向</p>
+    <p>關係圓滿</p>
+    <p>本質提升</p>
+    <p>健康飲食</p>
+    <p>社會服務</p>
+    <p>愛情功課</p>
+    <p>明理見性</p>
+    <p>自在生活</p>
+  </section>
+  <section class="home-container">
+    <div class="label-div pure-u-1" ng-repeat="data in datas">
+      <div class="label-left pure-u-1-2">
+        <div class="label-header">
+          <h1>{{data.title}}</h1>
+          <p>{{data.job}}</p>
+        </div>
+        <ul class="tags">
+          <li><label class="tag">人</label></li>
+          <li><label class="tag">活</label></li>
+          <li><label class="tag">健康</label></li>
+          <li><label class="tag">營養師</label></li>
+        </ul>
+        <tt><sub>Published/2015.01.16</sub></tt>
+      </div>
+      <div class="label-right pure-u-1-2">
+        <div class="label-icon">
+          <i class="fa fa-clock-o">18分鐘</i>
+          <i class="fa fa-heart">520</i>
+          <i class="fa fa-toggle-right">1,800</i>
+        </div>
+        <div class="img-div">
+          <img class="pure-u-1" src="{{data.img}}" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
