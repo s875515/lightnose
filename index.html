@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>光鼻子生命分享影音平台</title>
+    <!-- <link rel="stylesheet" href="lib/css/material.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+
+    <link rel="stylesheet" href="lib/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/css/pure-min.css">
+    <link rel="stylesheet" href="lib/css/grids-responsive-min.css">
+    <link rel="stylesheet" href="lib/css/animate.css">
+    <link rel="stylesheet" href="lib/css/owl.carousel.css">
+    <link rel="stylesheet" href="lib/css/owl.theme.css">
+
+    <link rel="stylesheet" href="html/css/styles.min.css">
+
+    <!-- <script src="lib/js/material.min.js"></script> -->
+    <script src="lib/js/jquery-1.9.1.min.js"></script>
+    <script src="lib/js/angular.min.js"></script>
+    <script src="lib/js/angular-animate.min.js"></script>
+    <script src="lib/js/angular-cookies.min.js"></script>
+    <script src="lib/js/angular-route.min.js"></script>
+    <script src="lib/js/owl.carousel.min.js"></script>
+
+    <script src="html/js/main.js"></script>
+  </head>
+  <body ng-controller="BodyCtrl">
+    <div class="header" ng-init="slidemenu=true">
+      <label class="fa fa-reorder fa-lg" ng-click="slidemenu=!slidemenu"></label>
+      <div class="logo-div pure-u-1-2">
+        <img class="pure-u-md-1-5" src="html/images/logo.svg" alt="" />
+        <input type="text" class="pure-u-md-3-5" placeholder="Hi, 光鼻子！現在想聞什麼法呢？" ng-mouseenter="searchhover=true" ng-mouseleave="searchhover=false">
+        <i class="fa fa-search fa-lg animated"  ng-class="{flip: searchhover}"></i>
+      </div>
+      <div class="horizontal-menu pure-menu pure-menu-horizontal">
+        <a href="#" class="pure-menu-heading pure-menu-link">關於</a>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">5am</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">加入會員</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">登入</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="side-menu animated pure-u-md-1-5" ng-class="{fadeInLeft: slidemenu, fadeOutLeft: !slidemenu}">
+      <div class="pure-menu">
+        <div class="menu-header">
+          <label class="fa menu-close animated" ng-click="slidemenu=false" ng-class="{shake: menuclose}" ng-mouseenter="menuclose=true" ng-mouseleave="menuclose=false">X</label>
+        </div>
+        <ul class="pure-menu-list">
+          <li class="pure-menu-item animated" ng-class="{bounce: MenuData.bounce}" ng-mouseenter="MenuData.bounce=true" ng-mouseleave="MenuData.bounce=false" data-ng-repeat="MenuData in MenuDatas"><a href="#" class="pure-menu-link">{{MenuData.name}}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id='main' role='main' ng-view></div>
+  </body>
+</html>

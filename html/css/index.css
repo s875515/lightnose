@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+}
+
+.header {
+  padding: 20px;
+  background-color: #424242;
+  text-align: center;
+}
+.header i, .header label {
+  color: #fff;
+}
+.header label {
+  padding: 20px;
+  cursor: pointer;
+}
+.header label:hover {
+  opacity: 0.4;
+}
+.header .logo-div img {
+  display: inline-block;
+}
+.header .logo-div input {
+  padding: 8px;
+  border-radius: 20px;
+  background-color: #424242;
+  color: #B09F8A;
+  font-size: 14px;
+  border: 2px solid #fff;
+}
+.header .horizontal-menu {
+  text-align: right;
+}
+.header .horizontal-menu a {
+  color: #fff;
+  font-weight: 100;
+}
+.header .horizontal-menu a:hover {
+  background-color: #999;
+}

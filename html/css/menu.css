@@ -1,0 +1,30 @@
+.side-menu {
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  z-index: 10000;
+  text-align: center;
+  background-color: rgba(66, 66, 66, 0.87);
+  min-height: 100%;
+}
+.side-menu .menu-header {
+  text-align: right;
+  color: #A4A49E;
+  border-bottom: 2px solid;
+}
+.side-menu .menu-close {
+  padding: 0 20px;
+  font-size: 36px;
+  cursor: pointer;
+}
+.side-menu .pure-menu-item {
+  padding: 10px;
+}
+.side-menu .pure-menu-link {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 100;
+}
+.side-menu .pure-menu-link:hover {
+  background-color: inherit;
+}
