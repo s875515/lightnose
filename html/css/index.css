@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  position: relative;
 }
 
 #main {
@@ -49,4 +50,39 @@ body {
 }
 .header .horizontal-menu a:hover {
   background-color: #999;
+}
+
+footer {
+  width: 100%;
+  background-color: #eee;
+  text-align: center;
+}
+footer section {
+  line-height: 30px;
+}
+@media screen and (min-width: 35.5em) {
+  footer section {
+    line-height: 60px;
+  }
+}
+footer ul {
+  padding: 0;
+}
+footer .pure-menu-link {
+  font-size: 12px;
+}
+footer .pure-menu-link:hover {
+  background-color: inherit;
+}
+footer .footer-left {
+  text-align: left;
+}
+footer .footer-right {
+  text-align: right;
+  display: block;
+}
+@media screen and (min-width: 35.5em) {
+  footer .footer-right {
+    display: inline-block;
+  }
 }

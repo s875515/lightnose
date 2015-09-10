@@ -2,9 +2,6 @@
   margin-top: 20px;
   text-align: center;
 }
-#home-page .owl-buttons {
-  display: none;
-}
 #home-page #owl-1 .item img {
   display: block;
   width: 100%;
@@ -173,4 +170,7 @@
   position: absolute;
   right: 0;
   top: 0;
+}
+#home-page .some-text {
+  text-align: left;
 }

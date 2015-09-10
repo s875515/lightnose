@@ -32,7 +32,7 @@ myApp.controller('BodyCtrl', ['$scope', function($scope){
 myApp.controller('HomeCtrl', ['$scope', function($scope){
 
   $("#owl-1").owlCarousel({
-    navigation : true,
+    navigation : false,
     slideSpeed : 300,
     paginationSpeed : 400,
     singleItem : true,
@@ -49,9 +49,9 @@ myApp.controller('HomeCtrl', ['$scope', function($scope){
 
   owl.owlCarousel({
     items : 5, //10 items above 1000px browser width
-    itemsDesktop : [1000,5], //5 items between 1000px and 901px
-    itemsDesktopSmall : [900,5], // 3 items betweem 900px and 601px
-    itemsTablet: [600,5], //2 items between 600 and 0;
+    // itemsDesktop : [1000,5], //5 items between 1000px and 901px
+    // itemsDesktopSmall : [900,5], // 3 items betweem 900px and 601px
+    itemsTablet: [900,4], //2 items between 600 and 0;
     itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
     pagination : false
   });
