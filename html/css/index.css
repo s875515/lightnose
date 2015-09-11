@@ -78,6 +78,7 @@ footer .footer-left {
   text-align: left;
 }
 footer .footer-right {
+  overflow: hidden;
   text-align: right;
   display: block;
 }
