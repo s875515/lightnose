@@ -27,6 +27,21 @@
 #home-page .mobile-tabs li {
   font-size: 20px;
 }
+#home-page .carousel-div {
+  position: relative;
+}
+#home-page .carousel-div i {
+  position: absolute;
+  font-size: 20px;
+  color: #ADADAD;
+  top: 25px;
+}
+#home-page .carousel-div i.left-icon {
+  left: 0;
+}
+#home-page .carousel-div i.right-icon {
+  right: 0;
+}
 #home-page #owl-2 .owl-item {
   margin: 0 28px;
   border: 2px solid #FFEC00;
