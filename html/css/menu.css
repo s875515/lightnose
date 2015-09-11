@@ -4,7 +4,8 @@
   padding: 20px;
   z-index: 10000;
   text-align: center;
-  background-color: rgba(66, 66, 66, 0.87);
+  background-color: #424242;
+  opacity: 0.75;
   min-height: 100%;
 }
 @media screen and (max-width: 35.5em) {

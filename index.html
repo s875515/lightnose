@@ -28,8 +28,8 @@
     <script src="html/js/main.js"></script>
   </head>
   <body ng-controller="BodyCtrl">
-    <section class="header" ng-init="slidemenu=undefined">
-      <label class="fa fa-reorder fa-lg" ng-click="slidemenu=!slidemenu"></label>
+    <section class="header">
+      <label class="fa fa-reorder fa-lg" ng-init="slidemenu=undefined" ng-click="slidemenu=!slidemenu"></label>
       <div class="logo-div pure-u-1-2 pure-u-2-3">
         <img class="pure-u-md-1-5 animated" src="html/images/logo.svg" ng-class="{flip: searchhover}"/>
         <input type="text" class="pure-u-md-3-5 pure-u-1" placeholder="Hi, 光鼻子！現在想聞什麼法呢？" ng-mouseenter="searchhover=true" ng-mouseleave="searchhover=false">
@@ -40,7 +40,7 @@
           <li class="pure-menu-item"><a href="#" class="pure-menu-link">關於</a></li>
           <li class="pure-menu-item"><a href="#" class="pure-menu-link">5am</a></li>
           <li class="pure-menu-item"><a href="#" class="pure-menu-link">加入會員</a></li>
-          <li class="pure-menu-item"><a href="#" class="pure-menu-link">登入</a></li>
+          <li class="pure-menu-item"><a class="pure-menu-link" ng-click="loginslide=true">登入</a></li>
         </ul>
       </div>
     </section>
@@ -54,6 +54,25 @@
         </ul>
       </div>
     </section>
+    <!-- <section class="login-div"> -->
+    <form class="animated" ng-init="loginslide=undefined" ng-class="{true: 'fadeInUp', false: 'fadeOutDown','undefined': 'hidden'}[loginslide]">
+      <label class="fa login-close" ng-click="loginslide=false">X</label>
+      <p>光鼻子使用者帳號 or email</p>
+      <input type="text">
+      <p>密碼</p>
+      <input type="password">
+      <a class="forget-password" href="#">忘記密碼？</a>
+      <div class="login-btn-div">
+        <button type="submit" class="login-btn">登入</button>
+      </div>
+      <div class="login-footer">
+        <p>還沒有光鼻子帳號嗎？</p>
+        <a href="#">馬上加入
+          <i class="fa fa-plus-square-o"></i>
+        </a>
+      </div>
+    </form>
+    <!-- </section> -->
     <section id='main' role='main' ng-view></section>
     <footer>
       <section class="pure-menu pure-menu-horizontal pure-u-1">
