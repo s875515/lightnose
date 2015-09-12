@@ -1,6 +1,12 @@
 #home-page {
-  padding: 0 15%;
-  box-sizing: border-box;
+  padding: 0;
+  box-sizing: inherit;
+}
+@media screen and (min-width: 35.5em) {
+  #home-page {
+    padding: 0 15%;
+    box-sizing: border-box;
+  }
 }
 #home-page .carousel-one {
   margin-top: 20px;
@@ -47,7 +53,7 @@
   right: 0;
 }
 #home-page #owl-2 .owl-item {
-  margin: 0 28px;
+  margin: 0 25px;
   border: 2px solid #FFEC00;
   border-radius: 50%;
   height: 70px;
