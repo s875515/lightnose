@@ -1,3 +1,7 @@
+#home-page {
+  padding: 0 15%;
+  box-sizing: border-box;
+}
 #home-page .carousel-one {
   margin-top: 20px;
   text-align: center;
